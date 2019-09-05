@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Registartion Form</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>THE CODE REVIEW</h1>
+        <div>
+            <h2>Sign up for our newsletter</h2>
+            <p class="fade">Get the latest new on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+
+    <main>
+        <hr class="double-line">
+        <form action="index.html" method="post"> 
+
+            <fieldset class="contact">
+                <legend>Contact Information</legend>
+
+                <div class="flex">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="user_name" placeholder="Required" required>
+                </div>
+
+                <div class="flex">
+                    <label for="email">Email Adress</label>
+                    <input id="email" type="email" name="user_mail" placeholder="Required" required>
+                </div>
+
+                <div class="flex">
+                    <label for="number">Phone Number</label>
+                    <input id="number" type="tel" name="user_number">
+                </div>
+
+                <div class="flex">
+                    <label for="street">Street Adress</label>
+                    <input id="street" type="text" name="user_street">
+                </div>
+
+                <div class="flex">
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="user_city">
+                </div>
+
+                <div class="flex">
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="ontario">Ontario</option>
+                        <option value="quebec">Quebec</option>
+                        <option value="british_colombia">British Columbia</option>
+                        <option value="alberta">Alberta</option>
+                        <option value="manitoba">Manitoba</option>
+                        <option value="saskatchewan">Saskatchewan</option>
+                        <option value="nova_scotia">Nova Scotia</option>
+                        <option value="new_brunswick">New Brunswick</option>
+                        <option value="newfoundland_and_labrador">Newfoundland and Labrador</option>
+                        <option value="prince_edward_island">Prince Edward Island</option>
+                        <option value="northwest_territories">Northwest Territories</option>
+                        <option value="nunavut">Nunavut</option>
+                        <option value="yukon">Yukon</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <label for="postal-code">Postal Code</label>
+                    <input id="postal-code" type="text" name="user_postal_code">
+                </div>
+            </fieldset>
+
+            <hr class="line">
+
+            <fieldset class="news">
+                <legend>Newsletter</legend>
+
+                <label> Select the newsletter you would like to recieve</label>
+                <div class="container">
+                    <input id="html-news" type="checkbox" value="html-news" name="news_type"><label for="html-news">HTML News</label><br>
+                    <input id="html-css" type="checkbox" value="css-news" name="news_type"><label for="html-css">CSS News</label><br>
+                    <input id="html-javascript" type="checkbox" value="javascript-news" name="news_type"><label for="html-javascript">Javascipt News</label>
+                </div>
+
+                <label>Newsletter format</label>
+                <div class="container">
+                    <input id="html" type="radio" name="newsletter_format"><label for="html">HTML</label><br>
+                    <input id="plain_text" type="radio" name="newsletter_format"><label for="plain_text">Plain text</label>
+                </div>
+
+                <label for="comment">Other topics you'd like to hear about</label>
+                <textarea id="comment" name="user_comment"></textarea>
+            </fieldset>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>

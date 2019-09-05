@@ -1,0 +1,214 @@
+/* Base Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+.fade,
+.contact,
+.news,
+footer {
+    opacity: .7;
+}
+
+
+header {
+    background-color: #f3f76d;
+}
+
+/* Sticky footer */
+body {
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
+    color: #171b21;
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    min-height: 15vh;
+}
+
+/* header styles */
+
+header {
+    text-align: center;
+}
+
+header div {
+    padding-bottom: 30px; 
+}
+
+h1 {
+    margin: 0;
+    padding: 40px;
+    background-color: rgb(40, 48, 61);
+    color: white;
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+header p {
+    margin-right: 45px;
+    margin-left: 45px;
+    font-size: 1.6rem;
+}
+
+.double-line {
+    padding-top: 10px; 
+    border: none;
+    border-top: 6px solid #171b21;
+    border-bottom: 4px solid #171b21;
+    margin-top: 20px;
+    margin-bottom: 50px;
+} 
+
+/* form styles */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex input,
+select {
+    width: 100%;
+}
+
+legend {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+    display: flex;
+}
+
+legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+fieldset label {
+    font-size: 1.4rem;
+}
+
+.contact input,
+select,
+.news textarea{
+    border: none;
+    background-color: rgba(235, 235, 235, .7);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    transition: background-color 2s; 
+}
+
+.contact input:focus,
+select:focus,
+.news textarea:focus {
+    outline: none;
+    border-radius: 5px; 
+    border: 2px solid #171b21;
+    background-color: #f3f76d;
+}
+
+.contact div:last-child input {
+    width: 50%;
+}
+
+.container {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.container input[type="checkbox"],
+.container input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.news textarea {
+    width: 100%;
+    min-height: 150px;
+}
+
+form button[type="submit"] {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 70px;
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgb(54, 194, 194);
+    border: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .flex label {
+        margin: auto 0;
+        flex-basis: 30%;
+    }
+
+    .flex input,
+    select {
+        flex-basis: 70%;
+    }
+
+    main,
+    header div{
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    header h1 {
+        padding: 20px;
+    }
+
+    header h2 {
+        margin-top: 50px; 
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    legend {
+        font-size: 1.5rem;
+    }
+
+    fieldset label {
+        font-size: 1rem;
+    }
+
+    .news input[type="comment"] {
+        min-height: 100px;
+    }
+
+    form button[type="submit"] {
+        min-height: 50px;
+    }
+
+    .contact div:last-child input {
+        flex-basis: 30%;
+    }
+}
